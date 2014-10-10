@@ -12,7 +12,7 @@
     <!-- The default code generator. You can override this one, to generate your own code style
          Defaults to org.jooq.util.DefaultGenerator -->
     <name>org.jooq.util.DefaultGenerator</name>
-
+	
     <database>
       <!-- The database type. The format here is:
            org.util.[database].[database]Database -->
@@ -31,7 +31,15 @@
            (A Java regular expression. Use the pipe to separate several expressions).
            Excludes match before includes -->
       <excludes></excludes>
+      
+   
     </database>
+
+	<generate>
+		<daos>true</daos>
+	</generate>
+    
+  
 
     <target>
       <!-- The destination package of your generated classes (within the destination directory) -->
